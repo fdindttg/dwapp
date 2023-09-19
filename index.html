@@ -1,0 +1,235 @@
+<html style="font-size: 48px;"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <title>聚合导航地址 - 视频APP免费下载</title>
+    <link rel="dns-prefetch" href="https://libs.baidu.com">
+    <link rel="manifest" href="manifest.json">
+<!--     <link rel="icon" href="data:;base64,="> -->
+    <script src="lib-flexble.js"></script>
+	<!--<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+    <link rel="stylesheet" href="index.css">
+    <script src="vue.min.js"></script>
+    <script>
+      (function(){
+	  if(window.history && window.history.pushState) {
+		window.onpopstate=function () {
+	            window.history.pushState('forward', null, '');
+	            window.history.forward(1);
+		};
+	}
+    window.history.pushState('forward', null, '');//在IE中必须得有这两行
+    window.history.forward(1);
+    })();
+    var channel = location.search;
+    </script>
+
+
+</head>
+
+<body>
+    <div id="app" style="height: 100%;">
+	<div style="height: 100%;">
+	<section>
+	<h3 class="section-title">永久域名 58668.live | 18188.live </h3>
+	<ul class="section-3">
+	
+	
+	<li class="section-3-li clearfix">
+	<div class="img-div">
+	<img src="4.png" alt="logo"></div> 
+	<div class="middle-word">
+	<h2>下载地址四</h2> 
+	<p class="sub-title">欧美、日韩、亚洲精品！<br>内置海量福利视频</p> <p class="download-number">下载次数：<span>122284</span>次</p>
+	</div>
+	<div class="download-btn-main">
+	<a target="_blank" href="http://58668b.live" onclick="sendAction('兜兜直播下载', channel)" class="download-btn ios-install-dounai margin-top-attr">立即下载</a>
+	</div></li>
+	
+	<li class="section-3-li clearfix">
+	<div class="img-div">
+	<img src="5.png" alt="logo"></div> 
+	<div class="middle-word">
+	<h2>下载地址五</h2> 
+	<p class="sub-title">全新福利视频<br>多多在手，看遍所有</p> <p class="download-number">下载次数：<span>194545</span>次</p>
+	</div>
+	<div class="download-btn-main">
+	<a target="_blank" href="http://58668b.live" onclick="sendAction('兜兜直播下载', channel)" class="download-btn ios-install-dounai margin-top-attr">立即下载</a>
+	</div></li>
+	
+	<li class="section-3-li clearfix">
+	<div class="img-div">
+	<img src="6.png" alt="logo"></div> 
+	<div class="middle-word">
+	<h2>下载地址六</h2> 
+	<p class="sub-title">你们想要的视频app!<br>高清、大视频！</p> <p class="download-number">下载次数：<span>176639</span>次</p>
+	</div>
+	<div class="download-btn-main">
+	<a target="_blank" href="http://58668b.live" onclick="sendAction('兜兜直播下载', channel)" class="download-btn ios-install-dounai margin-top-attr">立即下载</a>
+	</div></li>
+	
+
+</section> </div></div>
+
+    <!--<script type="text/javascript" charset="UTF-8" src="static/js/openinstall.js"></script>-->
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                websiteData: websiteData,
+                appData: appData,
+                mobileAdsData: mobileAdsData,
+                canxiao: canxiao,
+                showkey:990,
+                showkeyol:998,
+                showtime:false,
+                
+                rdata:[],
+                appKeyCode:[
+
+                   {  code:"wFsEtoMt",
+                      appkey:"hmxgte",
+                      name:"青青草"
+                   },
+                         ],
+                dateUrl: [{
+                        url: "https://baidu.com",
+                        name: "玉米视频"
+                    },
+                ],
+                ioslink:[
+                    { 
+						url:"https://baidu.com",
+                        name:"青青草"
+
+                    },
+                ]
+                
+
+            },
+            
+
+            /*computed:{
+              adsDataForm:function(){
+                for(var i=0;i<adsData.length;i++){
+                  adsData[i].imgName =  '../../lib/adsImg/'+ adsData[i].imgName
+                }
+                return  adsData
+              },
+              mobileAdsDataForm:function(){
+                mobileAdsData.imgName = '../../lib/adsImg/'+ mobileAdsData.imgName
+                return mobileAdsData
+              }
+            },
+            created:function(){
+              document.title = this.websiteData.title
+            },*/
+            methods: {
+                openinstall: function (r) {
+                    var data = OpenInstall.parseUrlParams(); //openinstall.js中提供的工具函数，解析url中的所有查询参数
+                    var self = this;
+                    data.code = this.appKeyCode[r].code;
+                    new OpenInstall({
+                    appKey: this.appKeyCode[r].appkey,
+                    preferWakeup: true,
+                    onready: function () {
+
+                        this.wakeupOrInstall()
+                        // this.wakeupOrInstall
+
+                    }
+                }, data);
+                    // this.download();
+					// window.location.href="https://www.baidu.com/"
+                   
+                },
+                downloadNumberFn: function () {
+                    let number = 100000 + Math.floor(Math.random() * 100000)
+                    return number
+                },
+                // 头部随机网址
+                randomUrl: function (arr, count) {
+                    var shuffled = arr.slice(0),
+                        i = arr.length,
+                        min = i - count,
+                        temp, index;
+                    while (i-- > min) {
+                        index = Math.floor((i + 1) * Math.random());
+                        temp = shuffled[index];
+                        shuffled[index] = shuffled[i];
+                        shuffled[i] = temp;
+                    }
+                    return shuffled.slice(min);
+                   },
+                //    ios跳转地址
+                   jump:function(p){
+                    window.location.href=this.ioslink[p].url
+                   },
+                //    设备判断
+                   judge:function(){
+                    if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                        this.showkey=999;
+                        this.showkeyol=992;
+                        this.showtime=true;
+
+                        
+                      //Ios
+                    } else if (/(Android)/i.test(navigator.userAgent)) {
+                     //Android终端
+                     this.showkey=990;
+                     this.showkeyol=998;
+                        
+                    }
+
+
+                   }
+                   
+
+               
+
+
+
+
+            },
+            mounted(){
+              this.rdata=this.randomUrl(this.dateUrl,4);
+              this.judge();
+              
+              },
+             
+
+            // created() {
+            //     var data = OpenInstall.parseUrlParams(); 
+            //     var self = this;
+            //     data.code = 'mGgXgX3Z';
+            //     new OpenInstall({
+            //         appKey: this.appKey,
+            //         preferWakeup: true,
+            //         onready: function () {
+
+            //             self.download = this.wakeupOrInstall;
+
+            //         }
+            //     }, data);
+            // }
+        });
+    </script>
+
+
+
+    
+
+    <script>
+        if (window.self !== window.top) {
+            //document.writeln('  <a href="/" target="_blank" style="position:fixed;top:0;width:100%;height:2000px;"><a>')
+        }
+
+    function sendAction(eventCategory, channel) {
+     
+    }
+    </script>
+
+
+
+
+</body></html>
